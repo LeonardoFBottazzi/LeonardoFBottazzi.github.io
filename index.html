@@ -1,15 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<!-- CSS Style-->
-<style>
-	h2 {color: red;}
-  h3 {color: red;}
-  h4 {color: red;}
-  h5 {color: red;}
-  h6 {color: red;}
-</style>
 
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width">
 
@@ -125,7 +118,16 @@ Può sostituire qualsiasi giocatore in seconda linea quando vuole senza chiedere
       </tr>
     </tbody>
   </table>
- 
+
+  <button class="button" onclick="stampa()">Sono un bottone, clicca</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function stampa() {
+    document.getElementById("demo").innerHTML = "Bob";
+  }
+  </script>
 </div>
 </body>
 </html>  
